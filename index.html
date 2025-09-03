@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -15,24 +15,21 @@
 <body>
 
     <div class="container">
-        <div class="container__contenido">
-            <div class="container__informaciones">
-                <div class="container__texto">
+        <div class="container__content">
+            <div class="container__information">
+                <div class="container__text">
                     <h1></h1>
-                    <p class="texto__parrafo"></p>
+                    <p class="text__paragraph"></p>
                 </div>
-                <input type="number" id="valorUsuario" min="1" max="10" class="container__input">
-                <div class="chute container__botones">
-                    <button onclick ="verificarIntento();" class = "container__boton">Intentar</button>
-                    <button onclick ="reiniciarJuego();" class = "container__boton" id ="reiniciar" disabled>Nuevo juego</button>
+                <input type="number" id="userValue" min="1" max="10" class="container__input">
+                <div class="guess container__buttons">
+                    <button onclick="checkGuess();" class="container__button">Guess</button>
+                    <button onclick="restartGame();" class="container__button" id="restart" disabled>New Game</button>
                 </div>
             </div>
-            <img src="./img/ia.png" alt="Una persona mirando a la izquierda" class="container__imagen-persona" />
+            <img src="./img/ia.png" alt="A person looking to the left" class="container__person-image" />
         </div>
     </div>
-
-
-
 
     <script src="app.js" defer></script>
 </body>
